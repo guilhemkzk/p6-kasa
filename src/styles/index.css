@@ -1,0 +1,329 @@
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------RESET CSS--------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** end reset css**/
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------GENERAL--------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1140px;
+  margin: auto;
+  font-family: "Monserrat", sans-serif;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  margin: 0 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------BANNER--------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+span {
+  text-decoration: none;
+  color: #ff6060;
+  line-height: 2.2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 1rem auto;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu span {
+  font-size: 24px;
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  /* text-decoration-line: underline; */
+}
+
+.header span:hover {
+  cursor: pointer;
+}
+
+header span:visited {
+  text-decoration: underline;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------HOME--------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+.home {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-banner {
+  height: 230px;
+  width: 100%;
+}
+
+.image-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(70%);
+}
+
+.slogan-banner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 500;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 2rem;
+}
+
+.gallery-item img {
+  z-index: 1;
+  height: 340px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery-item {
+  height: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.gallery-item::before {
+  content: "";
+  z-index: 10;
+  height: 340px;
+  width: 26%;
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+}
+
+.gallery-item span {
+  z-index: 50;
+  text-align: left;
+  position: absolute;
+  color: white;
+  width: 150px;
+  padding-left: 0.5rem;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
