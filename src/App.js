@@ -12,10 +12,10 @@ function App() {
         <div className="container">
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/fiche" element={<FicheLogement />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/fiche/:name" element={<FicheLogement />} />
             <Route path="/error" element={<Error />} />
-            <Route path="/apropos" element={<APropos />} />
+            <Route exact path="/apropos" element={<APropos />} />
           </Routes>
         </div>
       </Router>
