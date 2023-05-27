@@ -1,5 +1,6 @@
 import Gallery from "../components/Gallery";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import image from "../assets/images/image1.webp";
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
       </div>
 
       <Gallery />
+      <Footer />
     </div>
   );
 }
