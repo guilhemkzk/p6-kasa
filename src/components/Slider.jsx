@@ -36,8 +36,12 @@ function Slider(slides) {
         );
       })}
       <div className="nav">
-        <PreviousBtn className="left-arrow" onClick={prevSlide} />
-        <NextBtn className="right-arrow" onClick={nextSlide} />
+        <div className="nav-prev-btn" onClick={prevSlide}>
+          <PreviousBtn />
+        </div>
+        <div className="nav-next-btn" onClick={nextSlide}>
+          <NextBtn />
+        </div>
       </div>
     </div>
   );

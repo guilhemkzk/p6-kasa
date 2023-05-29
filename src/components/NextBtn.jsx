@@ -1,11 +1,7 @@
 import nextNav from "../assets/images/next.png";
 
 function NextBtn() {
-  return (
-    <div className="nav-btn">
-      <img src={nextNav} className="nav-next" alt="Navigation suivant" />
-    </div>
-  );
+  return <img src={nextNav} className="nav-next" alt="Navigation suivant" />;
 }
 
 export default NextBtn;

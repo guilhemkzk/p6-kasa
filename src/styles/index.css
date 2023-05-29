@@ -405,12 +405,21 @@ header span:visited {
   overflow: hidden;
 }
 
+.slide {
+  opacity: 0;
+  transition-duration: 2s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 2s;
+}
+
 .slider-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: absolute;
-  transition: 1s;
   border-radius: 25px;
 }
 
@@ -422,7 +431,8 @@ header span:visited {
   align-items: center;
 }
 
-.nav-btn {
+.nav-next,
+.nav-prev {
   z-index: 50;
   height: 80px;
   width: auto;
