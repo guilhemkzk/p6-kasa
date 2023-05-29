@@ -13,12 +13,14 @@ function DropDownItem({ title, content }) {
   return (
     <div className="dropdown">
       <div className="dropdown-title" onClick={handleOpen}>
-        <h2>{title}</h2>
-        {open ? (
-          <img src={dropdownClose} alt="Flèche Dropdown Fermé" />
-        ) : (
-          <img src={dropdownOpen} alt="Flèche Dropdown Ouvert" />
-        )}
+        <div className="dropdown-title-container">
+          <h2>{title}</h2>
+          {open ? (
+            <img src={dropdownOpen} alt="Flèche Dropdown Fermé" />
+          ) : (
+            <img src={dropdownClose} alt="Flèche Dropdown Ouvert" />
+          )}
+        </div>
       </div>
 
       <div className="dropdown-content">

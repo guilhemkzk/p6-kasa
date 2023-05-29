@@ -4,7 +4,6 @@ import annonces from "../data/annonces.json";
 import Slider from "../components/Slider";
 import StarScale from "../components/StarScale";
 import DropDownItem from "../components/DropDownItem";
-import BtnSlider from "../components/BtnSlider";
 
 function FicheLogement() {
   const { name } = useParams(); // a mettre dans useState
@@ -16,18 +15,13 @@ function FicheLogement() {
     }
   }
 
-  console.log(logement);
+  // if (Object.keys(logement).length === 0) {
+  //   navigate("/error");
+  // }
 
   return (
-    <div className="fiche">
-      <div className="container-slider">
-        <Slider currentLogement={logement} />
-        <div className="nav">
-          {" "}
-          <BtnSlider moveSlide="prevSlide" direction={"prev"} />
-          <BtnSlider moveSlide="nextSlide" direction={"next"} />
-        </div>
-      </div>
+    <div className="fiche page">
+      <Slider slides={logement.pictures} />
 
       <div className="fiche-header">
         <div className="fiche-header-title">

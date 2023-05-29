@@ -4,7 +4,7 @@ import image from "../assets/images/image2.webp";
 
 function APropos() {
   return (
-    <div className="apropos">
+    <div className="apropos page">
       <div className="image-banner">
         <Banner image={image} />
       </div>
