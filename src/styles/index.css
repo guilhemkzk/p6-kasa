@@ -160,6 +160,10 @@ body {
   font-family: "Monserrat", sans-serif;
 }
 
+.container {
+  margin: 0 1rem;
+}
+
 .page {
   min-height: 100vh;
 }
@@ -216,7 +220,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   margin: 1rem auto;
   box-sizing: content-box;
   width: 100%;
@@ -233,7 +236,6 @@ span {
   margin: 0 1.5rem;
   display: flex;
   align-items: center;
-  /* text-decoration-line: underline; */
 }
 
 .header span:hover {
@@ -295,6 +297,8 @@ header span:visited {
   font-size: 48px;
   color: white;
   font-weight: 500;
+  padding: 0 1rem;
+  width: 80%;
 }
 
 .gallery {
@@ -646,12 +650,66 @@ header span:visited {
   width: auto;
 }
 
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------MEDIA QUERIES------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
 @media (max-width: 600px) {
-  .heading h1 {
-    font-size: 2rem;
+  /* ------------------------------------------------------------------------------------------------- */
+  /* -----------------------------------------------HOME---------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+
+  .container {
+    margin: 0 1.5rem;
   }
 
-  .heading p {
-    font-size: 1.5rem;
+  .menu span {
+    font-size: 12px;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .image-banner {
+    height: 150px;
+  }
+
+  .slogan-banner {
+    font-size: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    background: none;
+    margin: 0 auto;
+    padding: 0;
+    grid-row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer span {
+    font-size: 12px;
+  }
+
+  /* ------------------------------------------------------------------------------------------------- */
+  /* --------------------------------------------HOUSING---------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+
+  .container-slider {
+    height: 330px;
+  }
+
+  .nav-next,
+  .nav-prev {
+    height: 20px;
+  }
+
+  .fiche-header {
+    flex-direction: column;
   }
 }
