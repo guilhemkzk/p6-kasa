@@ -1,12 +1,11 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import annonces from "../data/annonces.json";
-import Slider from "../components/Slider";
+import Slider from "../components/slider/Slider";
 import StarScale from "../components/StarScale";
 import DropDownItem from "../components/DropDownItem";
 
 function FicheLogement() {
-  const { name } = useParams(); // a mettre dans useState
+  const { name } = useParams();
   let logement = {};
 
   for (let item of annonces) {

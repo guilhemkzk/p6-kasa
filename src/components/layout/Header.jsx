@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../../assets/images/logo.png";
 
 function Header() {
   return (
@@ -28,7 +28,7 @@ function Header() {
               isActive ? "link-active" : "link-inactive"
             }
           >
-            A propos
+            A Propos
           </NavLink>
         </span>
       </div>

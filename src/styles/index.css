@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Monserrat;
+  src: url("../assets/font/Montserrat-Regular.ttf");
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------RESET CSS--------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------- */
@@ -135,8 +140,6 @@ table {
 /* ---------------------------------------------GENERAL--------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-
 #root {
   min-height: 100vh;
   display: flex;
@@ -153,8 +156,8 @@ body {
   min-height: 100vh;
   max-width: 1140px;
   margin: auto;
-  font-family: "Monserrat", sans-serif;
   height: 100%;
+  font-family: "Monserrat", sans-serif;
 }
 
 .page {
@@ -274,7 +277,7 @@ header span:visited {
 .image-banner {
   height: 230px;
   width: 100%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .image-banner img {
@@ -302,7 +305,7 @@ header span:visited {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
-  margin-top: 2rem;
+  margin: 2rem auto;
   background: #f6f6f6;
   border-radius: 25px;
   padding: 3rem 3rem;
@@ -333,7 +336,7 @@ header span:visited {
     rgba(0, 0, 0, 0.9) 0%,
     rgba(0, 0, 0, 0) 50%
   );
-  opacity: 0.4;
+  opacity: 0.6;
   border-radius: 10px;
 }
 
@@ -350,9 +353,10 @@ header span:visited {
   z-index: 50;
   position: absolute;
   color: white;
-  width: 150px;
+  width: 70%;
   padding-left: 0.5rem;
   font-size: 18px;
+  font-size: 500;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -438,6 +442,7 @@ header span:visited {
   width: auto;
   cursor: pointer;
   user-select: none;
+  margin: 0 1rem;
 }
 
 .fiche-header {
@@ -593,6 +598,7 @@ header span:visited {
 }
 
 .apropos-container {
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,16 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import FicheLogement from "./pages/FicheLogement";
-import Error from "./pages/Error";
-import APropos from "./pages/APropos";
-import Footer from "./components/Footer";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import HomePage from "./pages/HomePage";
+import HousingPage from "./pages/HousingPage";
+import ErrorPage from "./pages/ErrorPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -19,11 +14,11 @@ function App() {
         <div className="container">
           <Header />
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/fiche/:name" element={<FicheLogement />} />
-            <Route exact path="/apropos" element={<APropos />} />
-            <Route path="/error" element={<Error />} />
-            <Route path="*" element={<Error />} />
+            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/fiches/:name" element={<HousingPage />} />
+            <Route exact path="/apropos" element={<AboutPage />} />
+            <Route path="/error" element={<ErrorPage />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
         </div>

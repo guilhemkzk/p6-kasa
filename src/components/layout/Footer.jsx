@@ -1,4 +1,4 @@
-import logoBlack from "../assets/logo_black.png";
+import logoBlack from "../../assets/images/logo_black.png";
 
 function Footer() {
   return (

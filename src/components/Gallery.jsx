@@ -12,7 +12,7 @@ function Gallery() {
           className="gallery-item"
           onClick={(e) => {
             e.preventDefault();
-            navigate("/fiche/" + log.id);
+            navigate("/fiches/" + log.id);
           }}
         >
           <span key={log.id + "_span"}> {log.title}</span>
