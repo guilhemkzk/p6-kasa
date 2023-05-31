@@ -23,29 +23,29 @@ function FicheLogement() {
       <Slider slides={logement.pictures} />
 
       <div className="fiche-header">
-        <div className="fiche-header-title">
-          <h1>{logement.title}</h1>
-          <p>{logement.location}</p>
-        </div>
+        <div className="fiche-header-highlights">
+          <div className="fiche-header-highlights-main">
+            <h1>{logement.title}</h1>
+            <p>{logement.location}</p>
+          </div>
 
-        <div className="fiche-proprio">
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt="Propriétaire" />
+          <div className="fiche-header-highlights-keywords">
+            {" "}
+            <ul>
+              {logement.tags.map((tag) => (
+                <li key={logement.id + "_tag" + tag}>{tag}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div className="fiche-resume">
-        <div className="fiche-resume-motsclefs">
-          {" "}
-          <ul>
-            {logement.tags.map((tag) => (
-              <li key={logement.id + "_tag" + tag}>{tag}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="fiche-resume-rating">
-          <StarScale scaleValue={logement.rating} />
+        <div className="fiche-header-secondary">
+          <div className="fiche-header-other-owner">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt="Propriétaire" />
+          </div>
+          <div className="fiche-header-other-rating">
+            <StarScale scaleValue={logement.rating} />
+          </div>
         </div>
       </div>
 
