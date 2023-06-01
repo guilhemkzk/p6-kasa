@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import annonces from "../data/annonces.json";
 import Slider from "../components/slider/Slider";
 import StarScale from "../components/StarScale";
 import DropDownItem from "../components/DropDownItem";
 
-function FicheLogement() {
+function HousingPage() {
   const { name } = useParams();
   let logement = {};
 
@@ -14,9 +14,9 @@ function FicheLogement() {
     }
   }
 
-  // if (Object.keys(logement).length === 0) {
-  //   navigate("/error");
-  // }
+  if (Object.keys(logement).length === 0) {
+    return <Navigate to="/404" />;
+  }
 
   return (
     <div className="fiche page">
@@ -67,4 +67,4 @@ function FicheLogement() {
   );
 }
 
-export default FicheLogement;
+export default HousingPage;

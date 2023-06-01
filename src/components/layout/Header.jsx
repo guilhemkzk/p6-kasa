@@ -23,7 +23,7 @@ function Header() {
         </span>
         <span>
           <NavLink
-            to="/apropos"
+            to="/a-propos"
             className={({ isActive }) =>
               isActive ? "link-active" : "link-inactive"
             }
