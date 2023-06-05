@@ -1,14 +1,14 @@
-import Banner from "../components/Banner";
-import DropDownItem from "../components/DropDownItem";
+import Banner from "../components/tools/Banner";
+import DropDownItem from "../components/tools/DropDownItem";
 import image from "../assets/images/image2.webp";
 
 function APropos() {
   return (
-    <div className="apropos page">
+    <div className="about page">
       <div className="image-banner">
         <Banner image={image} />
       </div>
-      <div className="apropos-container">
+      <div className="about-container">
         <DropDownItem
           title="Fiabilité"
           content={

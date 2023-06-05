@@ -1,0 +1,168 @@
+@media (max-width: 600px) {
+  /* ------------------------------------------------------------------------------------------------- */
+  /* -----------------------------------------------HOME---------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+
+  .container {
+    margin: 0 1.5rem;
+  }
+
+  .menu span {
+    font-size: 12px;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .image-banner {
+    height: 150px;
+  }
+
+  .slogan-banner {
+    font-size: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    background: none;
+    margin: 0 auto;
+    padding: 0;
+    grid-row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer span {
+    font-size: 12px;
+  }
+
+  /* ------------------------------------------------------------------------------------------------- */
+  /* --------------------------------------------HOUSING---------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+
+  .housing .container-slider {
+    height: 330px;
+    margin-bottom: 1rem;
+  }
+
+  .nav-next,
+  .nav-prev {
+    height: 20px;
+  }
+
+  .housing-header {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .housing-header-highlights-main h1 {
+    font-size: 18px;
+  }
+
+  .housing-header-highlights-main p {
+    font-size: 14px;
+  }
+
+  .housing-header-highlights-keywords li {
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 0 1rem;
+    min-width: 1rem;
+  }
+
+  .housing-header-secondary {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
+  .housing-header-other-owner {
+    margin-bottom: 0;
+  }
+
+  .housing-header-other-owner p {
+    font-size: 12px;
+  }
+
+  .housing-header-other-owner img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ratting-star {
+    width: 13px;
+    height: 13px;
+    padding-left: 0.4rem;
+  }
+
+  .housing-details {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+  }
+
+  .dropdown-title-container {
+    padding: 0.7rem 0;
+    border-radius: 5px;
+  }
+  .dropdown-title h2 {
+    font-size: 13px;
+  }
+
+  .dropdown-title img {
+    height: 10px;
+  }
+
+  .dropdown-content span {
+    font-size: 12px;
+  }
+
+  /* ------------------------------------------------------------------------------------------------- */
+  /* --------------------------------------------ERROR---------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+
+  .error span {
+    font-size: 18px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .error p {
+    font-size: 14px;
+  }
+
+  .error h1 {
+    font-size: 96px;
+  }
+
+  /* ------------------------------------------------------------------------------------------------- */
+  /* --------------------------------------------ERROR---------------------------------------------- */
+  /* ------------------------------------------------------------------------------------------------- */
+  .image-banner {
+    height: 230px;
+  }
+
+  .image-banner img {
+    border-radius: 10px;
+  }
+
+  .about-container {
+    margin: 0;
+  }
+
+  .about-container .dropdown {
+    width: 100%;
+  }
+
+  .about-container .dropdown-title h2 {
+    font-size: 13px;
+  }
+
+  .about-container .dropdown-content span {
+    font-size: 12px;
+  }
+}

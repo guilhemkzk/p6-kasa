@@ -1,8 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import annonces from "../data/annonces.json";
 import Slider from "../components/slider/Slider";
-import StarScale from "../components/StarScale";
-import DropDownItem from "../components/DropDownItem";
+import StarScale from "../components/tools/StarScale";
+import DropDownItem from "../components/tools/DropDownItem";
 
 function HousingPage() {
   const { name } = useParams();
@@ -19,17 +19,17 @@ function HousingPage() {
   }
 
   return (
-    <div className="fiche page">
+    <div className="housing page">
       <Slider slides={logement.pictures} />
 
-      <div className="fiche-header">
-        <div className="fiche-header-highlights">
-          <div className="fiche-header-highlights-main">
+      <div className="housing-header">
+        <div className="housing-header-highlights">
+          <div className="housing-header-highlights-main">
             <h1>{logement.title}</h1>
             <p>{logement.location}</p>
           </div>
 
-          <div className="fiche-header-highlights-keywords">
+          <div className="housing-header-highlights-keywords">
             {" "}
             <ul>
               {logement.tags.map((tag) => (
@@ -38,18 +38,18 @@ function HousingPage() {
             </ul>
           </div>
         </div>
-        <div className="fiche-header-secondary">
-          <div className="fiche-header-other-owner">
+        <div className="housing-header-secondary">
+          <div className="housing-header-other-owner">
             <p>{logement.host.name}</p>
             <img src={logement.host.picture} alt="Propriétaire" />
           </div>
-          <div className="fiche-header-other-rating">
+          <div className="housing-header-other-rating">
             <StarScale scaleValue={logement.rating} />
           </div>
         </div>
       </div>
 
-      <div className="fiche-details">
+      <div className="housing-details">
         <DropDownItem title="Description" content={logement.description} />
 
         <DropDownItem

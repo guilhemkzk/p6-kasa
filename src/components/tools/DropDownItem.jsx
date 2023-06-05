@@ -1,5 +1,5 @@
-import dropdownClose from "../assets/images/dropdown-close.png";
-import dropdownOpen from "../assets/images/dropdown-open.png";
+import dropdownClose from "../../assets/images/dropdown-close.png";
+import dropdownOpen from "../../assets/images/dropdown-open.png";
 
 import * as React from "react";
 

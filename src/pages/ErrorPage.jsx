@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import error from "../assets/images/404.webp";
 
 function Error() {
   return (
     <div className="error">
-      <img src={error} alt="Erreur" />
+      <h1>404</h1>
 
       <span>Oups! La page que vous demandez n'existe pas.</span>
       <p>

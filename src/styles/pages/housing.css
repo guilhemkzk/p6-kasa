@@ -1,0 +1,95 @@
+.housing-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.housing-header-highlights {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+
+.housing-header-highlights-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.housing-header-highlights-main h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.housing-header-highlights-main p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.housing-header-other {
+  flex: 0.3;
+}
+
+.housing-header-other-owner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.housing-header-other-owner p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 0.5rem;
+  overflow-wrap: break-word;
+  max-width: min-content;
+}
+
+.housing-header-other-owner img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.housing-header-secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-bottom: 2rem;
+}
+
+.housing-header-highlights-keywords {
+  display: flex;
+  width: 100%;
+}
+
+.housing-header-highlights-keywords ul {
+  display: flex;
+}
+
+.housing-header-highlights-keywords li {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  background-color: #ff6060;
+  min-width: 5rem;
+  text-align: center;
+  padding: 0 2rem;
+  border-radius: 10px;
+  margin: auto 0.5rem;
+}
+
+.housing-header-other-rating {
+  display: flex;
+}
+
+.housing-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  width: 100%;
+}

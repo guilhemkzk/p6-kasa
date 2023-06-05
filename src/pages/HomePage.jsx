@@ -1,5 +1,5 @@
-import Gallery from "../components/Gallery";
-import Banner from "../components/Banner";
+import Gallery from "../components/gallery/Gallery";
+import Banner from "../components/tools/Banner";
 import image from "../assets/images/image1.webp";
 
 function Home() {

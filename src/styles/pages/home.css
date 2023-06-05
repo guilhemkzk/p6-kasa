@@ -1,0 +1,39 @@
+.home {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-banner {
+  height: 230px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.image-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(70%);
+}
+
+.slogan-banner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 500;
+  padding: 0 1rem;
+  width: 80%;
+}

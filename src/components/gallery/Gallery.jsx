@@ -1,9 +1,9 @@
-import annonces from "../data/annonces.json";
+import annonces from "../../data/annonces.json";
 import { useNavigate } from "react-router-dom";
+import GalleryItem from "./GalleryItem";
 
 function Gallery() {
   const navigate = useNavigate();
-
   return (
     <div className="gallery">
       {annonces.map((log) => (
@@ -16,7 +16,7 @@ function Gallery() {
           }}
         >
           <span key={log.id + "_span"}> {log.title}</span>
-          <img key={log.id + "_image"} src={log.cover} alt={log.title} />
+          <GalleryItem item={log} />
         </div>
       ))}
     </div>

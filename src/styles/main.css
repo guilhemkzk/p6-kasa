@@ -1,0 +1,71 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1140px;
+  margin: auto;
+  height: 100%;
+  font-family: "Monserrat", sans-serif;
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  margin: 0 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+p {
+  color: #ff6060;
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+  color: #ff6060;
+}
+
+li {
+  line-height: 2.2;
+  color: #ff6060;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ff6060;
+}
+
+span,
+div {
+  color: #ff6060;
+}
+
+span {
+  text-decoration: none;
+  line-height: 2.2;
+}

@@ -1,0 +1,36 @@
+.about {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  font-size: 24px;
+}
+
+.about-container {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .image-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container .dropdown {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.about-container .dropdown-content,
+.about-container .dropdown-title h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.about-container .dropdown-content span {
+  font-size: 24px;
+}

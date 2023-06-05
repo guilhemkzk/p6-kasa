@@ -1,5 +1,5 @@
-import redStar from "../assets/images/redstar.png";
-import greyStar from "../assets/images/greystar.png";
+import redStar from "../../assets/images/redstar.png";
+import greyStar from "../../assets/images/greystar.png";
 
 function StarScale(props) {
   const range = [1, 2, 3, 4, 5];
