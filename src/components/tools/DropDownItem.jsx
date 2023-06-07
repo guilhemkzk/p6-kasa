@@ -23,8 +23,19 @@ function DropDownItem({ title, content }) {
         </div>
       </div>
 
-      <div className="dropdown-content">
-        {open ? <span> {content}</span> : null}
+      <div
+        className={open ? "dropdown-content animate-open" : "dropdown-content "}
+      >
+        {open ? (
+          <span
+            className={
+              open ? "dropdown-text animate-open-text" : "dropdown-text "
+            }
+          >
+            {" "}
+            {content}
+          </span>
+        ) : null}
       </div>
     </div>
   );

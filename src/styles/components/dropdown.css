@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 0;
+  z-index: 30;
 }
 
 .dropdown-title h2 {
@@ -33,19 +34,35 @@
   padding-right: 1rem;
 }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dropdown-content {
   display: flex;
   width: 100%;
   background-color: #f7f7f7;
   border-radius: 10px;
+  z-index: 0;
 }
 
-.dropdown-content span {
+.dropdown-text {
   padding: 1.5rem 1.2rem;
   text-align: justify;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.animate-open-text {
+  animation: slideIn 0.3s;
 }
 
 .dropdown-content span li {
