@@ -41,7 +41,17 @@
   border-radius: 10px;
 }
 
-.gallery-item img {
+.gallery-item-internal-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  max-width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.gallery-item-internal-container img {
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -50,11 +60,11 @@
   object-fit: cover;
 }
 
-.gallery-item span {
+.gallery-item-internal-container span {
   z-index: 50;
   position: absolute;
   color: white;
-  width: 70%;
+  width: 80%;
   padding-left: 0.5rem;
   font-size: 18px;
   font-size: 500;

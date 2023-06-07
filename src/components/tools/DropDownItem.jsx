@@ -16,9 +16,9 @@ function DropDownItem({ title, content }) {
         <div className="dropdown-title-container">
           <h2>{title}</h2>
           {open ? (
-            <img src={dropdownOpen} alt="Flèche Dropdown Fermé" />
+            <img src={dropdownClose} alt="Flèche Dropdown Fermé" />
           ) : (
-            <img src={dropdownClose} alt="Flèche Dropdown Ouvert" />
+            <img src={dropdownOpen} alt="Flèche Dropdown Ouvert" />
           )}
         </div>
       </div>

@@ -57,8 +57,7 @@
 .housing-header-secondary {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  margin-bottom: 2rem;
+  justify-content: inherit;
 }
 
 .housing-header-highlights-keywords {
@@ -68,6 +67,7 @@
 
 .housing-header-highlights-keywords ul {
   display: flex;
+  width: 100%;
 }
 
 .housing-header-highlights-keywords li {
@@ -79,7 +79,13 @@
   text-align: center;
   padding: 0 2rem;
   border-radius: 10px;
-  margin: auto 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .housing-header-other-rating {

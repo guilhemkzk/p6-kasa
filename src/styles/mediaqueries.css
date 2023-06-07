@@ -96,7 +96,8 @@
   .ratting-star {
     width: 13px;
     height: 13px;
-    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-left: 0;
   }
 
   .housing-details {

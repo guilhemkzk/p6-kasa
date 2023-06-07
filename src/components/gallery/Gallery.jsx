@@ -15,7 +15,6 @@ function Gallery() {
             navigate("/fiches/" + log.id);
           }}
         >
-          <span key={log.id + "_span"}> {log.title}</span>
           <GalleryItem item={log} />
         </div>
       ))}
