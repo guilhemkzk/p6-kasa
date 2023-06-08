@@ -1,8 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import annonces from "../data/annonces.json";
 import Slider from "../components/slider/Slider";
-import StarScale from "../components/tools/StarScale";
-import DropDownItem from "../components/tools/DropDownItem";
+import StarScale from "../components/StarScale";
+import DropDownItem from "../components/DropDown";
 
 function HousingPage() {
   const { name } = useParams();

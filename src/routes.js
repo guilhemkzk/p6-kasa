@@ -24,8 +24,8 @@ const routes = () => (
           <Route path="/404" element={<ErrorPage />} />
           <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   </>
 );

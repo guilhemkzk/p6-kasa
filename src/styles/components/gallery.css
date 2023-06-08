@@ -65,7 +65,9 @@
   position: absolute;
   color: white;
   width: 80%;
-  padding-left: 0.5rem;
+  line-height: 25px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
   font-size: 18px;
   font-size: 500;
 }

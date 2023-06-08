@@ -1,5 +1,5 @@
-import Banner from "../components/tools/Banner";
-import DropDownItem from "../components/tools/DropDownItem";
+import Banner from "../components/Banner";
+import DropDownItem from "../components/DropDown";
 import image from "../assets/images/image2.webp";
 
 function APropos() {

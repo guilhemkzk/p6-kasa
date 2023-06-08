@@ -39,6 +39,9 @@ function Slider(slides) {
         <div className="nav-prev-btn" onClick={prevSlide}>
           <PreviousBtn />
         </div>
+        <span className="slider-counter" key={current + "_count"}>
+          {current + 1}/{length}
+        </span>
         <div className="nav-next-btn" onClick={nextSlide}>
           <NextBtn />
         </div>

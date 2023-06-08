@@ -1,4 +1,4 @@
-import TruncateText from "../tools/TruncateText";
+import TruncateText from "../../utils/TruncateText";
 
 function GalleryItem(item) {
   return (
