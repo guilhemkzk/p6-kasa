@@ -1,9 +1,9 @@
 import { useState } from "react";
-import dropdownOpen from "../assets/images/dropdown-open.png";
+import dropdownOpen from "../assets/images/dropdown-arrow.png";
 
 let counter = 0;
 
-function DropDownItem({ title, content }) {
+function DropDown({ title, content }) {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -40,7 +40,6 @@ function DropDownItem({ title, content }) {
               open ? "dropdown-text animate-open-text" : "dropdown-text "
             }
           >
-            {" "}
             {content}
           </span>
         ) : null}
@@ -49,4 +48,4 @@ function DropDownItem({ title, content }) {
   );
 }
 
-export default DropDownItem;
+export default DropDown;

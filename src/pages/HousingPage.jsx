@@ -1,8 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
 import annonces from "../data/annonces.json";
+
 import Slider from "../components/slider/Slider";
 import StarScale from "../components/StarScale";
-import DropDownItem from "../components/DropDown";
+import DropDown from "../components/DropDown";
 
 function HousingPage() {
   const { name } = useParams();
@@ -50,9 +51,9 @@ function HousingPage() {
       </div>
 
       <div className="housing-details">
-        <DropDownItem title="Description" content={logement.description} />
+        <DropDown title="Description" content={logement.description} />
 
-        <DropDownItem
+        <DropDown
           title="Equipements"
           content={
             <ul>
