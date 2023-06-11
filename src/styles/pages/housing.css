@@ -46,6 +46,7 @@
   margin-right: 0.5rem;
   overflow-wrap: break-word;
   max-width: min-content;
+  text-align: right;
 }
 
 .housing-header-other-owner img {
