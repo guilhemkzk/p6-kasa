@@ -1,13 +1,14 @@
-import dropdownClose from "../assets/images/dropdown-close.png";
+import { useState } from "react";
 import dropdownOpen from "../assets/images/dropdown-open.png";
 
-import * as React from "react";
+let counter = 0;
 
 function DropDownItem({ title, content }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
+    counter++;
   };
 
   return (
@@ -15,16 +16,23 @@ function DropDownItem({ title, content }) {
       <div className="dropdown-title" onClick={handleOpen}>
         <div className="dropdown-title-container">
           <h2>{title}</h2>
-          {open ? (
-            <img src={dropdownClose} alt="Flèche Dropdown Fermé" />
-          ) : (
-            <img src={dropdownOpen} alt="Flèche Dropdown Ouvert" />
-          )}
+
+          <img
+            src={dropdownOpen}
+            alt="Flèche Dropdown Flèche"
+            className={
+              open
+                ? "dropdown-arrow animate-arrow-open"
+                : counter > 0
+                ? "dropdown-arrow  animate-arrow-close"
+                : "dropdown-arrow"
+            }
+          />
         </div>
       </div>
 
       <div
-        className={open ? "dropdown-content animate-open" : "dropdown-content "}
+        className={open ? "dropdown-content animate-open" : "dropdown-content"}
       >
         {open ? (
           <span

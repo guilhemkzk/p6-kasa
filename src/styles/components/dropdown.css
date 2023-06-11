@@ -8,6 +8,7 @@
   background-color: #ff6060;
   border-radius: 10px;
   cursor: pointer;
+  padding-right: 1rem;
 }
 
 .dropdown-title-container {
@@ -28,10 +29,41 @@
   font-weight: 500;
 }
 
-.dropdown-title img {
+@keyframes rotateArrowOpen {
+  0% {
+    transform: rotate(0);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+}
+
+@keyframes rotateArrowClose {
+  0% {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(0);
+    transform-origin: center;
+  }
+}
+
+.dropdown-arrow {
   width: auto;
   height: 14px;
-  padding-right: 1rem;
+}
+
+.animate-arrow-open {
+  animation: rotateArrowOpen 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.animate-arrow-close {
+  animation: rotateArrowClose 0.5s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slideIn {
