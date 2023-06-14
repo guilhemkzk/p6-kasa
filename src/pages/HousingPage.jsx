@@ -6,11 +6,11 @@ import StarScale from "../components/StarScale";
 import DropDown from "../components/DropDown";
 
 function HousingPage() {
-  const { name } = useParams();
+  const { id } = useParams();
   let logement = {};
 
   for (let item of annonces) {
-    if (item.id === name) {
+    if (item.id === id) {
       logement = item;
     }
   }

@@ -19,10 +19,9 @@ const routes = () => (
         <Header />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/fiches/:name" element={<HousingPage />} />
+          <Route exact path="/fiches/:id" element={<HousingPage />} />
           <Route exact path="/a-propos" element={<AboutPage />} />
-          <Route path="/404" element={<ErrorPage />} />
-          <Route path="*" element={<Navigate to="/404" />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </div>
       <Footer />

@@ -38,15 +38,15 @@ function Slider(slides) {
 
       <div className="nav">
         <div className="nav-prev-btn" onClick={prevSlide}>
-          {length > 0 ? <PreviousBtn /> : null}
+          {length > 1 ? <PreviousBtn /> : null}
         </div>
-        {length > 0 ? (
+        {length > 1 ? (
           <span className="slider-counter" key={current + "_count"}>
             {current + 1}/{length}
           </span>
         ) : null}
         <div className="nav-next-btn" onClick={nextSlide}>
-          {length > 0 ? <NextBtn /> : null}
+          {length > 1 ? <NextBtn /> : null}
         </div>
       </div>
     </div>

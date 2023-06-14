@@ -24,7 +24,7 @@ function DropDown({ title, content }) {
     }
   };
   return (
-    <div className="dropdown">
+    <div>
       <div className="dropdown-title" onClick={handleOpen}>
         <div className="dropdown-title-container">
           <h2>{title}</h2>
